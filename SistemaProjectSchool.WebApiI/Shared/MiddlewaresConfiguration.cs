@@ -1,4 +1,5 @@
-﻿using SistemaProjectSchool.WebApiI.Modules;
+﻿using Microsoft.AspNetCore.Diagnostics;
+using SistemaProjectSchool.WebApiI.Modules;
 
 namespace SistemaProjectSchool.WebApi.Shared
 {
@@ -20,6 +21,8 @@ namespace SistemaProjectSchool.WebApi.Shared
 
             //agregar middlewares cors
             app.UseCors();
+
+            app.UseMiddleware<ExceptionHandlerMiddleware>();
 
             return app;
         }
