@@ -3,12 +3,12 @@ using System.Net;
 
 namespace SistemaProjectSchool.WebApi.Errors
 {
-    public class ExceptionHandlerMiddleware
+    public class ExceptionMiddleware
     {
         private readonly RequestDelegate _next;
         private readonly IWebHostEnvironment _environment;
 
-        public ExceptionHandlerMiddleware(RequestDelegate next, IWebHostEnvironment environment)
+        public ExceptionMiddleware(RequestDelegate next, IWebHostEnvironment environment)
         {
             _next = next;
             _environment = environment;

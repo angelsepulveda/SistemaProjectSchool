@@ -1,4 +1,6 @@
-﻿namespace SistemaProjectSchool.WebApi.Modules.People
+﻿using SistemaProjectSchool.WebApi.Modules.People.DocumentTypes;
+
+namespace SistemaProjectSchool.WebApi.Modules.People
 {
     internal static class PeopleEndPoints
     {

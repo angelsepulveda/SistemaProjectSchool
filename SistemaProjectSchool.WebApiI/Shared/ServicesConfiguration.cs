@@ -10,6 +10,8 @@
 
             builder.Services.AddWebApplictionServices(builder.Configuration);
 
+            builder.Services.AddValidatorsFromAssemblyContaining<Program>();
+
             //agregamos cors
             builder.Services.AddCors(options =>
             {
