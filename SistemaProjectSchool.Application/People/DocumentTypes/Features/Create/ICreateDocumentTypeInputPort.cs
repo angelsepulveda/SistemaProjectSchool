@@ -1,7 +1,7 @@
 ﻿namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Create
 {
-    public interface ICreateDocumentTypeInputPort
+    public interface ICreateDocumentTypeInputPort : IBaseInputPort<CreateDocumentTypePayload>
     {
-        ValueTask Handle(CreateDocumentTypePayload payload);
+
     }
 }

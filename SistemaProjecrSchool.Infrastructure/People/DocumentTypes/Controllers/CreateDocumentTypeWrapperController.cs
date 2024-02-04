@@ -19,7 +19,7 @@ namespace SistemaProjecrSchool.Infrastructure.People.DocumentTypes.Controllers
         {
            await _inputPort.Handle(payload);
 
-           return _presenter.DocumentTypeId;
+           return _presenter.Response;
         }
     }
 }

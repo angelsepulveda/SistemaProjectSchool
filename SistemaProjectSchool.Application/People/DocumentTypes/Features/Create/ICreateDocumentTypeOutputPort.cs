@@ -2,8 +2,7 @@
 
 namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Create
 {
-    public interface ICreateDocumentTypeOutputPort
+    public interface ICreateDocumentTypeOutputPort : IBaseOutputPort<DocumentType>
     {
-        ValueTask Handle(DocumentType documentType);
     }
 }

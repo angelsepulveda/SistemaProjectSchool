@@ -1,7 +1,6 @@
 ﻿namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Create
 {
-    public interface ICreateDocumentTypeController
+    public interface ICreateDocumentTypeController : IBaseController<CreateDocumentTypePayload,Guid>
     {
-        ValueTask<Guid> Handle(CreateDocumentTypePayload payload);
     }
 }

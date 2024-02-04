@@ -1,7 +1,7 @@
 ﻿namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Create
 {
-    public interface ICreateDocumentTypePresenter : ICreateDocumentTypeOutputPort
+    public interface ICreateDocumentTypePresenter : IBasePresenter<Guid>, ICreateDocumentTypeOutputPort
     {
-        Guid DocumentTypeId { get; }
+
     }
 }

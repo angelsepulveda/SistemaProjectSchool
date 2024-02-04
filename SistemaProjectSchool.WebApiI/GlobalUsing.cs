@@ -2,3 +2,4 @@
 global using SistemaProjectSchool.WebApi.Errors;
 global using SistemaProjectSchool.WebApi.Shared;
 global using FluentValidation;
+global using Microsoft.AspNetCore.Mvc;

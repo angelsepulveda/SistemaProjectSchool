@@ -1,4 +1,6 @@
 ﻿using SistemaProjectSchool.Application.People.DocumentTypes.Features.Create;
+using SistemaProjectSchool.Application.People.DocumentTypes.Features.GetAll;
+using SistemaProjectSchool.Application.People.DocumentTypes.Features.Update;
 
 namespace SistemaProjecrSchool.Infrastructure.People.DocumentTypes.Presenters
 {
@@ -9,6 +11,14 @@ namespace SistemaProjecrSchool.Infrastructure.People.DocumentTypes.Presenters
             services.AddScoped<CreateDocumentTypePresenter>();
             services.AddScoped<ICreateDocumentTypePresenter>(sp => sp.GetRequiredService<CreateDocumentTypePresenter>());
             services.AddScoped<ICreateDocumentTypeOutputPort>(sp => sp.GetRequiredService<CreateDocumentTypePresenter>());
+
+            services.AddScoped<UpdateDocumentTypePresenter>();
+            services.AddScoped<IUpdateDocumentTypePresenter>(sp => sp.GetRequiredService<UpdateDocumentTypePresenter>());
+            services.AddScoped<IUpdateDocumentTypeOutputPort>(sp => sp.GetRequiredService<UpdateDocumentTypePresenter>());
+
+            services.AddScoped<GetAllDocumentTypePresenter>();
+            services.AddScoped<IGetAllDocumentTypePresenter>(sp => sp.GetRequiredService<GetAllDocumentTypePresenter>());
+            services.AddScoped<IGetAllDocumentTypeOutputPort>(sp => sp.GetRequiredService<GetAllDocumentTypePresenter>());
 
             return services;
         }
