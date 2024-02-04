@@ -16,5 +16,8 @@
 
         public async ValueTask<DocumentType?> GetByName(string name) 
                   => await _context.DocumentTypes.FirstOrDefaultAsync(x => x.Name == name);
+
+        public async ValueTask<List<DocumentType>> Actives() => 
+             await _context.DocumentTypes.Where(x => x.IsDelete == false).ToListAsync();
     }
 }
