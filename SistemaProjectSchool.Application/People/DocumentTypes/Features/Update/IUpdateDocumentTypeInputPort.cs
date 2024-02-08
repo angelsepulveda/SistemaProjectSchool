@@ -1,7 +1,7 @@
 ﻿namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Update
 {
-    public interface IUpdateDocumentTypeInputPort : IBaseInputPort<UpdateDocumentTypePayload>
+    public interface IUpdateDocumentTypeInputPort
     {
-        
+        ValueTask Handle(UpdateDocumentTypePayload payload);
     }
 }

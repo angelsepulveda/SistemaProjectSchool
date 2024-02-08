@@ -3,8 +3,7 @@
 namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.GetAll
 {
     public interface IGetAllDocumentTypeOutputPort 
-        : IBaseOutputPort<List<DocumentType>>
     {
-
+        ValueTask Handle(List<DocumentType> output);
     }
 }

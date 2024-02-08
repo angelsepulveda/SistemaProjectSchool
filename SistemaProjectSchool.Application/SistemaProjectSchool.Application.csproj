@@ -14,4 +14,8 @@
     <ProjectReference Include="..\SistemaProjectSchool.Domain\SistemaProjectSchool.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Shared\" />
+  </ItemGroup>
+
 </Project>

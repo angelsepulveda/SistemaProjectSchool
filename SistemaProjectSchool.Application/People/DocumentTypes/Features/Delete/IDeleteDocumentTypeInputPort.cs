@@ -1,7 +1,7 @@
 ﻿namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Delete
 {
-    public interface IDeleteDocumentTypeInputPort : IBaseInputPort<Guid>
+    public interface IDeleteDocumentTypeInputPort
     {
-       
+        ValueTask Handle(Guid payload);
     }
 }

@@ -2,7 +2,8 @@
 
 namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Actives
 {
-    public interface IActivesDocumentTypesOutputPort : IBaseOutputPort<List<DocumentType>>
+    public interface IActivesDocumentTypesOutputPort
     {
+        ValueTask Handle(List<DocumentType> output);
     }
 }

@@ -1,6 +1,7 @@
 ﻿namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Update
 {
-    public interface IUpdateDocumentTypePresenter : IBasePresenter<Guid>, IUpdateDocumentTypeOutputPort
+    public interface IUpdateDocumentTypePresenter : IUpdateDocumentTypeOutputPort
     {
+        Guid Response { get; }
     }
 }

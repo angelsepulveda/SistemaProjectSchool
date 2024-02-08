@@ -2,7 +2,8 @@
 
 namespace SistemaProjectSchool.Application.People.DocumentTypes.Features.Update
 {
-    public interface IUpdateDocumentTypeOutputPort : IBaseOutputPort<DocumentType>
+    public interface IUpdateDocumentTypeOutputPort
     {
+        ValueTask Handle(DocumentType output);
     }
 }
